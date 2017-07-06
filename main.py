@@ -14,8 +14,11 @@ import mainwindow_auto
 class MainWindow(QMainWindow, mainwindow_auto.Ui_MainWindow):
  # access variables inside of the UI's file
  def __init__(self):
+
    super(self.__class__, self).__init__()
    self.setupUi(self) # gets defined in the UI file
+
+   self.showFullScreen()   
 
 # I feel better having one of these
 def main():
